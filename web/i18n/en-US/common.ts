@@ -543,7 +543,7 @@ const translation = {
       vectorHash: 'Vector hash:',
       hitScore: 'Retrieval Score:',
     },
-    inputPlaceholder: 'Talk to Bot',
+    inputPlaceholder: '',
     thinking: 'Thinking...',
     thought: 'Thought',
   },
