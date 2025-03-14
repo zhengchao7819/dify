@@ -25,7 +25,7 @@ const translation = {
     debugConfig: 'Debug',
     addFeature: 'Add Feature',
     automatic: 'Generate',
-    stopResponding: 'Stop responding',
+    stopResponding: '停止思考',
     agree: 'like',
     disagree: 'dislike',
     cancelAgree: 'Cancel like',

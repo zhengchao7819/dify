@@ -5,10 +5,10 @@ const translation = {
     appUnknownError: 'App is unavailable',
   },
   chat: {
-    newChat: 'New chat',
+    newChat: '新聊天',
     pinnedTitle: 'Pinned',
     unpinnedTitle: 'Chats',
-    newChatDefaultName: 'New conversation',
+    newChatDefaultName: '新对话',
     resetChat: 'Reset conversation',
     poweredBy: 'Powered by',
     prompt: 'Prompt',
@@ -17,7 +17,7 @@ const translation = {
     configStatusDes: 'Before starting, you can modify the conversation settings',
     configDisabled:
       'Previous session settings have been used for this session.',
-    startChat: 'Start Chat',
+    startChat: '开始咨询',
     privacyPolicyLeft:
       'Please read the ',
     privacyPolicyMiddle:

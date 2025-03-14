@@ -15,6 +15,9 @@ export type AnswerIconProps = {
   imageUrl?: string | null
 }
 
+// 定义默认图片链接
+const DEFAULT_IMAGE_URL = 'https://image.trtpre.com/2023/08/28/1695979329449635841.png'
+
 const AnswerIcon: FC<AnswerIconProps> = ({
   iconType,
   icon,
@@ -32,13 +35,15 @@ const AnswerIcon: FC<AnswerIconProps> = ({
     'border-black/5',
     'text-xl',
   )
-  const isValidImageIcon = iconType === 'image' && imageUrl
+  // 处理 imageUrl，如果为空则使用默认图片链接
+  const finalImageUrl = imageUrl || DEFAULT_IMAGE_URL
+  const isValidImageIcon = true
   return <div
     className={wrapperClassName}
     style={{ background: background || '#D5F5F6' }}
   >
     {isValidImageIcon
-      ? <img src={imageUrl} className="w-full h-full rounded-full" alt="answer icon" />
+      ? <img src={finalImageUrl} className="w-full h-full rounded-full" alt="answer icon" />
       : (icon && icon !== '') ? <em-emoji id={icon} /> : <em-emoji id='🤖' />
     }
   </div>
